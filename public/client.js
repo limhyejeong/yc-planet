@@ -27,7 +27,7 @@ renderer = new THREE.WebGLRenderer({
 renderer.setSize(window.innerWidth, window.innerHeight);
 renderer.setPixelRatio(window.devicePixelRatio);
 renderer.autiClear = false;
-renderer.setClearColor(0x00000, 0.0);
+renderer.setClearColor(0xffffff, 1);
 
 const controls = new OrbitControls(camera, renderer.domElement);
 
@@ -62,7 +62,7 @@ scene.add(cloudMesh);
 const starGeometry = new THREE.SphereGeometry(80, 64, 64);
 
 const starMaterial = new THREE.MeshBasicMaterial({
-    map : THREE.ImageUtils.loadTexture('texture/galaxy.png'),
+    map : THREE.ImageUtils.loadTexture('texture/galaxy2.png'),
     side : THREE.BackSide
 });
 

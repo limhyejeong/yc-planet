@@ -62,7 +62,7 @@ scene.add(cloudMesh);
 const starGeometry = new THREE.SphereGeometry(80, 64, 64);
 
 const starMaterial = new THREE.MeshBasicMaterial({
-    map : THREE.ImageUtils.loadTexture('texture/galaxy2.png'),
+    map : THREE.ImageUtils.loadTexture('texture/galaxy.png'),
     side : THREE.BackSide
 });
 
